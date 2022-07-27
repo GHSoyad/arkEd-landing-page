@@ -27,12 +27,12 @@
                             <span class="my-auto"> Ark Ed</span>
                         </a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler order-1 order-md-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse order-2 order-md-0" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item mx-1 mx-xl-3">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -49,13 +49,11 @@
                             <li class="nav-item mx-1 mx-xl-3">
                                 <a class="nav-link" href="#">About</a>
                             </li>
-                            <li class="nav-item mx-1 mx-xl-3">
-                                <a class="nav-link" href="#">Register</a>
-                            </li>
                         </ul>
                     </div>
                     <div>
-                        <button class="btn btn-outline-primary p-2 px-sm-5 py-sm-2 fw-bold">Register</button>
+                        <button
+                            class="btn btn-outline-primary p-2 px-sm-5 py-sm-2 fw-bold d-none d-md-block">Register</button>
                     </div>
                 </div>
             </nav>
@@ -114,12 +112,13 @@
 
     <!-- Main section -->
     <main>
+
+        <!-- Courses section -->
         <section id="courses" class="container-lg text-center">
             <h1 class="fw-bold">Discover Our Popular Courses</h1>
-            <p class="fs-5">It is a long established fact that a reader will be distracted by the readable
-                content of a page when
-                looking at its layout.</p>
-            <div class="row row-cols-1 row-cols-lg-2 g-4 text-start">
+            <p class="fs-5 my-3">It is a long established fact that a reader will be distracted by the readable
+                content <br>of a page when looking at its layout.</p>
+            <div class="row row-cols-1 row-cols-lg-2 g-4 text-start mt-4">
                 <div class="col">
                     <div class="d-flex flex-column flex-sm-row border rounded h-100">
                         <div class="col-sm-4">
@@ -199,6 +198,71 @@
                 </div>
             </div>
             <a href="" class="btn btn-primary px-4 py-2 fs-5 fw-bold mt-5">See More Courses</a>
+        </section>
+
+        <!-- Register now section -->
+        <section id="register" class="container-lg">
+            <div class="container-fluid">
+                <div
+                    class="row justify-content-between align-items-center text-bg-primary rounded p-3 p-md-5 text-center">
+                    <div class="col-lg-6 p-4 text-lg-start">
+                        <h1 class="fw-bold mb-3">Ready to join?</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout.</p>
+                    </div>
+
+                    <div class="col-lg-6 p-4 text-lg-end">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-light px-4 py-2 fs-5 fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Register Now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade text-dark text-start" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Register Now</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Registration form -->
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputName1" class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" id="exampleInputName1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                                    required>
+                                                <label class="form-check-label" for="exampleCheck1">Accept Terms and
+                                                    Condition</label>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Register</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
     </main>
