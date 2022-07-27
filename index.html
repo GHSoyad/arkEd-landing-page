@@ -11,6 +11,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,20 +22,20 @@
     <!-- Navbar section -->
     <nav>
         <div class="container-lg py-sm-2 py-lg-4">
-            <nav class="navbar navbar-expand-lg bg-white">
-                <div class="container-fluid p-0 py-2 fw-bold">
+            <nav class="navbar navbar-expand-lg bg-white p-0">
+                <div class="container-fluid p-0 py-md-2 fw-bold">
                     <div class="p-0 m-0">
                         <a class="navbar-brand p-0 m-0 text-primary fs-1 d-flex gap-2" href="#">
                             <img src="images/site-logos/site-favicon.png" alt="" class="img-fluid">
                             <span class="my-auto"> Ark Ed</span>
                         </a>
                     </div>
-                    <button class="navbar-toggler order-1 order-md-0" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler order-1 order-md-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse order-2 order-md-0" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse order-2 order-md-3 order-lg-0" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item mx-1 mx-xl-3">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -52,8 +55,8 @@
                         </ul>
                     </div>
                     <div>
-                        <button
-                            class="btn btn-outline-primary p-2 px-sm-5 py-sm-2 fw-bold d-none d-md-block">Register</button>
+                        <a href="#register"
+                            class="btn btn-outline-primary p-2 px-sm-5 py-sm-2 fw-bold d-none d-md-block order-md-1">Register</a>
                     </div>
                 </div>
             </nav>
@@ -114,7 +117,7 @@
     <main>
 
         <!-- Courses section -->
-        <section id="courses" class="container-lg text-center pt-5">
+        <section id="courses" class="container-lg text-center pt-3 pt-md-5">
             <h1 class="fw-bold">Discover Our Popular Courses</h1>
             <p class="fs-5 my-3">It is a long established fact that a reader will be distracted by the readable
                 content <br>of a page when looking at its layout.</p>
@@ -212,7 +215,7 @@
                             when looking at its layout.</p>
                     </div>
 
-                    <div class="col-lg-6 p-4 text-lg-end">
+                    <div class="col-lg-6 pt-0 pt-md-4 p-4 text-lg-end">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-light px-4 py-2 fs-5 fw-bold" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -267,8 +270,8 @@
 
         <!-- FAQ section -->
         <section id="faq" class="container-lg pt-5">
-            <h2 class="text-center">Frequently Asked Questions</h2>
-            <div class="row mt-5 justify-content-center">
+            <h1 class="fw-bold text-center">Frequently Asked Questions</h1>
+            <div class="row mt-4 justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item mb-1 border rounded">
@@ -347,10 +350,33 @@
             </div>
         </section>
 
+        <!-- Company section -->
+        <section id="company" class="container-lg py-5 d-none d-lg-block">
+            <h1 class="fw-bold text-center">Trusted by over 800+ companies</h1>
+            <div class="row row-cols-6 align-items-center mt-5">
+                <div class="c-logo"><img src="images/company/company-1.png" alt="" class="img-fluid"></div>
+                <div class="c-logo"><img src="images/company/company-2.png" alt="" class="img-fluid"></div>
+                <div class="c-logo"><img src="images/company/company-3.png" alt="" class="img-fluid"></div>
+                <div class="c-logo"><img src="images/company/company-4.png" alt="" class="img-fluid"></div>
+                <div class="c-logo"><img src="images/company/company-5.png" alt="" class="img-fluid"></div>
+                <div class="c-logo"><img src="images/company/company-6.png" alt="" class="img-fluid"></div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer section -->
-    <footer></footer>
+    <footer class="container-fluid text-bg-dark text-center p-5 mt-5">
+        <h1>ArkEd</h1>
+        <p>Office 41, Zawaya Buildin, Ghala Muscat,<br>Sultanate of Oman</p>
+        <a href="" class="mx-2 text-white">Privacy Policy </a>|<a href="" class="mx-2 text-white"> Terms of use</a>
+        <div class="d-flex align-items-center justify-content-center gap-5 my-4">
+            <a href="https://www.facebook.com/golam.sowad/" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://github.com/GHSoyad" class="text-white fs-3"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/golam-hasnain-soyad-5167b7227/" class="text-white fs-3"><i
+                    class="bi bi-linkedin"></i></a>
+        </div>
+        <p class="text-light fs-6">© 2022 Golam Hasnain Soyad</p>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

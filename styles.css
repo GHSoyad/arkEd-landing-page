@@ -6,13 +6,15 @@ body {
 }
 
 section {
-    margin: 5rem auto;
+    margin: 3rem auto;
 }
 
 .navbar-brand img {
-    width: 120px;
+    width: 100px;
 }
 
+
+/* Carousel */
 .carousel-item {
     height: 80vh;
 }
@@ -40,14 +42,26 @@ section {
     object-position: left;
 }
 
+#company .c-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive for large devices */
 @media screen and (max-width: 1200px) {
     .carousel-caption {
         padding: 0;
     }
 }
 
-
+/* Responsive for small devices */
 @media screen and (max-width: 768px) {
+    section {
+        margin: 2rem auto;
+    }
+
     .navbar-brand img {
         width: 80px;
     }
