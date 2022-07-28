@@ -9,7 +9,6 @@ body {
     width: 100px;
 }
 
-
 /* Carousel */
 .carousel-item {
     height: 80vh;
@@ -22,28 +21,32 @@ body {
 
 .carousel-caption h1 {
     font-size: 3rem;
-    font-weight: bold;
 }
 
 .carousel-item img {
-    height: 100%;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 #courses img {
-    width: 100%;
-    height: 100%;
-    max-height: 300px;
     object-fit: cover;
-    object-position: left;
-}
-
-#company .c-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #about img {
     object-fit: cover;
+}
+
+/* Accordion and Form */
+.accordion-button:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* Footer */
+#footer>a {
+    text-decoration: none;
+}
+
+#footer>a:hover {
+    text-decoration: underline;
 }
