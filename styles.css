@@ -9,18 +9,19 @@ body {
     width: 100px;
 }
 
+
+
 /* Carousel */
 .carousel-item {
     height: 80vh;
 }
 
 .carousel-caption {
-    margin-bottom: 5%;
     padding: 0 10%;
 }
 
 .carousel-caption h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 .carousel-item img {
@@ -28,17 +29,22 @@ body {
     filter: brightness(50%);
 }
 
-#courses img {
-    object-fit: cover;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
 }
 
-#about img {
+#courses img,
+#about img,
+#faq img {
     object-fit: cover;
 }
 
 /* Accordion and Form */
 .accordion-button:focus,
-.form-control:focus {
+.form-control:focus,
+.btn:focus {
     box-shadow: none;
 }
 
@@ -49,4 +55,27 @@ body {
 
 #footer>a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 4rem;
+    }
+
+    #about img,
+    #faq img {
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand img {
+        width: 80px;
+    }
 }
