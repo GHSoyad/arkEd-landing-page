@@ -9,7 +9,9 @@ body {
     width: 100px;
 }
 
-
+.nav-link {
+    text-align: end;
+}
 
 /* Carousel */
 .carousel-item {
